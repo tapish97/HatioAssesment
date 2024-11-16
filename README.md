@@ -33,7 +33,4 @@ Todo Project Manager is a full-stack application that allows users to manage pro
 
 ## Step-by-Step Instructions
 
-### 1. Clone the Backend Repository
-```bash
-git clone <repository_url>
-cd TodoProjectManager
+
