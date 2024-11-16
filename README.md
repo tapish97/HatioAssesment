@@ -20,3 +20,20 @@ Todo Project Manager is a full-stack application that allows users to manage pro
    spring.datasource.username=<your_username>
    spring.datasource.password=<your_password>
    spring.jpa.hibernate.ddl-auto=update
+
+
+# Backend Setup: TodoProjectManager
+
+## Prerequisites
+- Install **Java 17**.
+- Install **Maven**.
+- Set up and run an **Oracle database**.
+
+---
+
+## Step-by-Step Instructions
+
+### 1. Clone the Backend Repository
+```bash
+git clone <repository_url>
+cd TodoProjectManager
