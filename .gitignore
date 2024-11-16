@@ -1,0 +1,21 @@
+# Node.js
+frontend-todo/node_modules/
+frontend-todo/build/
+
+# Java/Maven
+TodoProjectManager/target/
+
+# IDE files
+*.idea/
+*.iml
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env
