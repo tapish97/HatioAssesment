@@ -1,0 +1,45 @@
+/* ProjectDetails.css */
+.project-container {
+    margin: 20px auto;
+    max-width: 900px;
+  }
+  
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .project-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .todos-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .todo-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-todo-form {
+    margin-top: 20px;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  

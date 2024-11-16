@@ -1,6 +1,11 @@
 # Node.js
 frontend-todo/node_modules/
 frontend-todo/build/
+frontend-todo/.pnp
+frontend-todo/.pnp.js
+
+# testing
+frontend-todo/coverage
 
 # Java/Maven
 TodoProjectManager/target/
@@ -19,3 +24,15 @@ Thumbs.db
 
 # Environment files
 .env
+
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,40 @@
+/* Edit form styling */
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .edit-form .form-control,
+  .edit-form .form-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .edit-form .btn-sm {
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  .edit-form button {
+    align-self: flex-start;
+  }
+  
+  /* Add Todo form */
+  .add-todo-form {
+    margin-top: 20px;
+  }
+  
+  .add-todo-form .input-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .add-todo-form .form-control {
+    flex: 1;
+  }
+  
