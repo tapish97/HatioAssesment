@@ -12,6 +12,10 @@ const Projects = ({ token }) => {
   const userToken = token || localStorage.getItem("token");
 
   const fetchProjects = async () => {
+    if (!userToken) {
+      navigate("/login"); // Redirect to the login page if no token
+      return;
+    }
     try {
       const response = await axios.get("/api/projects", {
         headers: {

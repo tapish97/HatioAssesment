@@ -23,20 +23,13 @@ public class ProjectController {
     @Autowired
     private ProjectService projectService;
 
-
-
-
     @PostMapping
     public ResponseEntity<Project> createProject(@RequestBody Project project, HttpServletRequest request) {
         Long userId = getUserIdFromToken(request); // Extract user ID from token/session
         Project createdProject = projectService.createProject(project, userId);
         return new ResponseEntity<>(createdProject, HttpStatus.CREATED);
     }
-
-    
-    
-    
-    
+  
     @GetMapping
     public ResponseEntity<List<Project>> getAllProjects(HttpServletRequest request) {
         Long userId = getUserIdFromToken(request);
@@ -58,9 +51,6 @@ public class ProjectController {
         return ResponseEntity.ok(project); // Return the project details
     }
     
-    
-    
-    
     @PutMapping("/{id}")
     public ResponseEntity<Project> updateProject(@PathVariable Long id, @RequestBody Project projectDetails, HttpServletRequest request) {
         Long userId = getUserIdFromToken(request);
@@ -68,13 +58,6 @@ public class ProjectController {
         return ResponseEntity.ok(updatedProject);
     }
 
-    
-    
-    
-    
-    
-    
-    
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteProject(@PathVariable Long id, HttpServletRequest request) {
         Long userId = getUserIdFromToken(request);
@@ -82,17 +65,6 @@ public class ProjectController {
         return ResponseEntity.noContent().build();
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     private Long getUserIdFromToken(HttpServletRequest request) {
         HttpSession session = request.getSession(false);
 

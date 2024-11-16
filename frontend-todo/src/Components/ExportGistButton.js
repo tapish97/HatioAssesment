@@ -61,17 +61,17 @@ const ExportGistButton = ({ project }) => {
   
         // console.log("Response Status:", response.status);
         // console.log("Response Headers:", response.headers);
-
-      if (!response.ok) {
-        throw new Error(`GitHub API error: ${response.statusText}`);
-      }
       // Save the file locally
       saveMarkdownFile(markdownContent, project.title);
+      if (!response.ok) {
+        throw new Error(` GitHub API error: ${response.statusText} `);
+      }
+
       const data = await response.json();
-      alert(`Gist created successfully: ${data.html_url}`);
+      alert(`${project.title}.md Downloded, Gist created successfully: ${data.html_url}`);
     } catch (error) {
       console.error("Error creating gist:", error);
-      alert("Failed to create gist. Please check your token or data.");
+      alert(`${project.title}.md Downloded, Failed to create gist. Please check your Github token`);
     }
   };
 

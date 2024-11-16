@@ -23,7 +23,6 @@ public class ProjectService {
 
 
     // Create a new project
-
     public Project createProject(Project project, Long userId) {
         // Fetch the user creating the project
         User user = userRepository.findById(userId)
@@ -37,11 +36,6 @@ public class ProjectService {
         return projectRepository.save(project);
     }
 
-
-
-
-
-
     // Get all projects for a specific user
 
     public List<Project> getProjectsByUserId(Long userId) {
@@ -50,22 +44,10 @@ public class ProjectService {
         return projectRepository.findProjectsByUserId(user.getId());
     }
 
-
-
-
-
     // Get a project by its ID
-
     public Optional<Project> getProjectById(Long projectId) {
         return projectRepository.findById(projectId);
     }
-
-
-
-
-
-
-    // Update an existing project
 
     public Project updateProject(Long projectId, Project projectDetails, Long userId) {
         Project existingProject = projectRepository.findById(projectId)
@@ -84,16 +66,7 @@ public class ProjectService {
         return projectRepository.save(existingProject);
     }
 
-
-
-
-
-
-
-
-
     // Delete a project
-
     public void deleteProject(Long projectId, Long userId) {
         Project existingProject = projectRepository.findById(projectId)
                 .orElseThrow(() -> new RuntimeException("Project not found"));
@@ -106,11 +79,6 @@ public class ProjectService {
         // Delete the project
         projectRepository.delete(existingProject);
     }
-
-
-
-
-
 
 
 }

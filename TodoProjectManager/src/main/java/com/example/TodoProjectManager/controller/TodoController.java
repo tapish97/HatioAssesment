@@ -73,7 +73,6 @@ public class TodoController {
     }
 
 
-
     // Helper method to check if the user is logged in and get their ID
     private Long getUserIdFromSession(HttpServletRequest request) {
         HttpSession session = request.getSession(false);

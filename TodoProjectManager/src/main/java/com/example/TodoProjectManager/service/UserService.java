@@ -13,8 +13,7 @@ import java.util.UUID;
 @Service
 public class UserService {
 
-    @Autowired
-    private UserRepository userRepository;
+    @Autowired UserRepository userRepository;
 
     public String register(String username, String password) {
         if (userRepository.findByUsername(username).isPresent()) {
@@ -59,7 +58,7 @@ public class UserService {
         return BCrypt.hashpw(password, BCrypt.gensalt());
     }
 
-    private boolean verifyPassword(String plainPassword, String hashedPassword) {
+    boolean verifyPassword(String plainPassword, String hashedPassword) {
         // Compare the provided password with the hashed password
         return BCrypt.checkpw(plainPassword, hashedPassword);
     }

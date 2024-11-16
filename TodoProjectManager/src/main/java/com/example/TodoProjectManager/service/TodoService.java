@@ -20,10 +20,6 @@ public class TodoService {
     @Autowired
     private ProjectRepository projectRepository;
 
-
-
-
-    // Create a new Todo
     public Todo createTodo(Todo todo, Long projectId) {
         // Validate that the project exists
         Project project = projectRepository.findById(projectId)
@@ -36,24 +32,15 @@ public class TodoService {
         return todoRepository.save(todo);
     }
 
-
-
-
     // Get all Todos for a specific Project
-    public List<Todo> getTodosByProjectId(Long projectId) {
-        return todoRepository.findByProjectId(projectId);
-    }
-
-
-
+    // public List<Todo> getTodosByProjectId(Long projectId) {
+    //     return todoRepository.findByProjectId(projectId);
+    // }
 
     // Get a Todo by ID
     public Optional<Todo> getTodoById(Long id) {
         return todoRepository.findById(id);
     }
-
-
-
 
     // Update a Todo
     public Todo updateTodo(Long todoId, Todo todoDetails) {
@@ -68,9 +55,6 @@ public class TodoService {
         return todoRepository.save(existingTodo);
     }
 
-
-
-
     // Delete a Todo
     public void deleteTodoById(Long todoId) {
         Todo existingTodo = todoRepository.findById(todoId)
@@ -78,10 +62,5 @@ public class TodoService {
 
         todoRepository.delete(existingTodo);
     }
-
-
-
-
-
 
 }
