@@ -46,11 +46,13 @@ Use the following command to start the Spring Boot application:
 ### **Frontend Setup**
 
 
-#### **Add GitHub Token**
+### **Add GitHub Token**
 
 1. Create a `.env` file in the root directory.
 2. Add the following line:
-   - REACT_APP_GITHUB_TOKEN=<your_github_personal_access_token>
+   ```env
+   REACT_APP_GITHUB_TOKEN=<your_github_personal_access_token>
+
 ##### **To generate a GitHub token:**
 4. Go to GitHub Developer Settings.
 5. Create a fine-grained token with Gist write permissions.
