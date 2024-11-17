@@ -37,10 +37,12 @@ Todo Project Manager is a full-stack application that allows users to manage pro
 
 #### Install Dependencies
 To install all required dependencies, run the following command:  
-  - mvn clean install
+  ```env
+  mvn clean install
 ### Start the Spring Boot Application
 Use the following command to start the Spring Boot application:
- - mvn spring-boot:run
+ ```env
+  mvn spring-boot:run
 
 
 ### **Frontend Setup**
