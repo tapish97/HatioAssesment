@@ -44,6 +44,7 @@ Use the following command to start the Spring Boot application:
  ```env
   mvn spring-boot:run
 
+---
 
 ### **Frontend Setup**
 
