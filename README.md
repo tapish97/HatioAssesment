@@ -31,21 +31,6 @@ Todo Project Manager is a full-stack application that allows users to manage pro
 
 ### Step-by-Step Instructions
 
-### Install and Run Spring Boot
-
-#### Install Dependencies
-To install all required dependencies, run the following command:  
-  ```env
-  mvn clean install
-### Start the Spring Boot Application
-Use the following command to start the Spring Boot application:
- ```env
-  mvn spring-boot:run
-
----
-
-### **Frontend Setup**
-
 ### **Add GitHub Token**
 
 1. Create a `.env` file in the root directory.
@@ -54,6 +39,40 @@ Use the following command to start the Spring Boot application:
    REACT_APP_GITHUB_TOKEN=<your_github_personal_access_token>
 
 ### **To generate a GitHub token:**
-4. Go to GitHub Developer Settings.
-5. Create a fine-grained token with Gist write permissions.
 
+1. Go to GitHub Developer Settings.
+2. Create a fine-grained token with Gist write permissions.
+
+### Install and Run Spring Boot
+
+#### Navigate to TodoManagerProject folder
+```
+cd TodoManagerProject
+```
+#### Install Dependencies
+To install all required dependencies, run the following command:  
+  ```env
+  mvn clean install
+```
+### Start the Spring Boot Application
+Use the following command to start the Spring Boot application:
+ ```env
+  mvn spring-boot:run
+```
+
+### **Frontend Setup**
+
+#### Navigate to TodoManagerProject folder
+```
+cd frontend-todo
+```
+#### Install Dependencies
+To install all required dependencies, run the following command:  
+  ```
+  npm install
+```
+### Start the React Application
+Use the following command to start the Frontend:
+ ```
+  npm start
+```
