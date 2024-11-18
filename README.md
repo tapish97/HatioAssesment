@@ -77,7 +77,7 @@ The backend runs on port 8080
 
 #### Add GitHub Token
 - Create a `.env` file in the root directory.
-- frontend-todo\.env
+- frontend-todo\src\.env
   - Add the following line:
    ```
    REACT_APP_GITHUB_TOKEN=<your_github_personal_access_token>
