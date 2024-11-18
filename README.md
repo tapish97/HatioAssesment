@@ -72,7 +72,7 @@ The backend runs on port 8080
 - Refer [Creating a fine-grained personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token)
 
 #### Add GitHub Token
-- Create a `.env` file in the root directory. frontend-todo\src\.env
+- Create a `.env` file in the root directory. **frontend-todo\src\.env**
 - Add the following line:
 
   ```
