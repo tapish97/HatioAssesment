@@ -72,8 +72,8 @@ The backend runs on port 8080
 1. **To generate a GitHub token:**
 
 - Go to GitHub Developer Settings.
-- Create a fine-grained token with Gist write permissions.
-  - Refer [Creating a fine-grained personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token)
+- Create a fine-grained token with ***Gist read and write permissions***.
+- Refer [Creating a fine-grained personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token)
 
 #### Add GitHub Token
 - Create a `.env` file in the root directory.
