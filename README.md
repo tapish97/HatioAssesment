@@ -14,8 +14,8 @@ Todo Project Manager is a full-stack application that allows users to manage pro
 
 ### **Database Setup**
 1. Install Oracle Database.
-2. Create a database/schema for the application.
-3. Update `src/main/resources/application.properties` in the backend:
+2. Create a database/schema for the application. 
+3. Update `TodoProjectManager\src\main\resources\application.properties` in the backend:
 
    ```properties
    spring.datasource.url=jdbc:oracle:thin:@<your_database_url>
