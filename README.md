@@ -121,8 +121,8 @@ Use the following command to start the Frontend:
 
 ## Usage
 - Open application in your browser.
-     1.Frontend: http://localhost:3000
-     2.Backend: http://localhost:8080
+  1.Frontend: http://localhost:3000
+  2.Backend: http://localhost:8080
 - Log in or register a new account.
 - Create, view, and manage projects and todos.
 - Export project summaries as markdown files or GitHub Gists.
