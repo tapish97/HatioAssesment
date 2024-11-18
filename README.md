@@ -76,7 +76,7 @@ The backend runs on port 8080
 - Add the following line:
 
   ```
-   REACT_APP_GITHUB_TOKEN=<your_github_personal_access_token>
+   REACT_APP_GITHUB_TOKEN="<your_github_personal_access_token>"
 
   ```
 
