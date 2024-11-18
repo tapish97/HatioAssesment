@@ -22,16 +22,14 @@ Todo Project Manager is a full-stack application that allows users to manage pro
    spring.jpa.hibernate.ddl-auto=update
 
 
-# Backend Setup: TodoProjectManager
+## Backend Setup: TodoProjectManager
 
-## Prerequisites
+### Prerequisites
 - Install **Java 17**.
 - Install **Maven**.
 - Set up and run an **Oracle database**.
 
----
-
-## Step-by-Step Instructions
+### Step-by-Step Instructions
 
 ### Install and Run Spring Boot
 
