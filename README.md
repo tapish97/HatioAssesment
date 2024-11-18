@@ -40,26 +40,22 @@ Todo Project Manager is a full-stack application that allows users to manage pro
 
 #### Backend Setup: TodoProjectManager
 
-1. **Clone the Backend Repository**
-   ```bash
-   git clone <repository_url>
-   cd TodoProjectManager
 
-2. **Navigate to TodoManagerProject folder**
+1. **Navigate to TodoManagerProject folder**
 ```
 cd TodoManagerProject
 ```
-3. **Install Dependencies**
+2. **Install Dependencies**
 To install all required dependencies, run the following command:  
   ```env
   mvn clean install
 ```
-4. **Start the Spring Boot Application**
+3. **Start the Spring Boot Application**
 Use the following command to start the Spring Boot application:
  ```env
   mvn spring-boot:run
 ```
-5. **Test the Backend**
+4. **Test the Backend**
 To ensure the backend is functioning correctly, run:
 ```
 mvn test
@@ -76,14 +72,15 @@ The backend runs on port 8080
 - Refer [Creating a fine-grained personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token)
 
 #### Add GitHub Token
-- Create a `.env` file in the root directory.
-- frontend-todo\src\.env
-  - Add the following line:
-   ```
-   REACT_APP_GITHUB_TOKEN=<your_github_personal_access_token>
-   ```
+- Create a `.env` file in the root directory. frontend-todo\src\.env
+- Add the following line:
 
-2. **Navigate to TodoManagerProject folder**
+  ```
+   REACT_APP_GITHUB_TOKEN=<your_github_personal_access_token>
+
+  ```
+
+2. **Navigate to ffrontend-todo folder**
 ```
 cd frontend-todo
 ```
@@ -121,8 +118,8 @@ Use the following command to start the Frontend:
 
 ## Usage
 - Open application in your browser.
-   1.Frontend: http://localhost:3000
-   2.Backend: http://localhost:8080
+  1. Frontend: http://localhost:3000
+  2. Backend: http://localhost:8080
 - Log in or register a new account.
 - Create, view, and manage projects and todos.
 - Export project summaries as markdown files or GitHub Gists.
